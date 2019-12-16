@@ -6,9 +6,9 @@ _Highlights and notes about known student-centric funding and education programs
     * [Student Flyer](https://shodor.org/media/content//ncsi/xsede-empower/materials/XSEDE_EMPOWER_Student_Flyer.pdf)
     * [Mentor Flyer](https://shodor.org/media/content//ncsi/xsede-empower/materials/XSEDE_EMPOWER_Mentor_Flyer.pdf)
     * Undergraduate
-    * Stipend between $650 and $6,000
+    * Stipend between $0 and $6,000
     * Dan would make a position for your project and you would apply to be mentored by him.
-    * _Possible_ two-week high performance computing workshop
+    * _Possible_ (very good) two-week high performance computing workshop
     * Previous recipients (Similar Blue Waters Student Internship Program):
         * [Nic Olsen](mailto:nicholas.olsen@wisc.edu)
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
@@ -34,8 +34,7 @@ _Highlights and notes about known student-centric funding and education programs
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
         * Dylan Hatch
         * Hammad Mazhar
-        * Toby Heyn?
-        * Justin?
+        * Spencer Orourke
         
         
 * [Faustin Prinz ME Research Fellowship](https://www.engr.wisc.edu/department/mechanical-engineering/academics/bachelor-of-science-in-mechanical-engineering/undergraduate-research-fellowship/)
@@ -58,8 +57,16 @@ _Highlights and notes about known student-centric funding and education programs
 * [Astronaut Scholarship Foundation](https://astronautscholarship.org/)
     * Undergraduate (Sophomore+)
     * Up to $10,000
-    * Application notes:
-    * UW-Madison nominates 2 students
+    * Lots of networking/career development opportunities
+    * Meet actual astronauts
+    * [Application notes:](https://astronautscholarship.org/scholarshipprogram.html)
+        * CV + Transcript
+        * Short personal statement
+            * Focus on passion for science
+        * 2 recommendation letters
+        * Accepts all STEM fields (not just AE), don't need to know/care about space stuff
+        * Can apply both Junior and Senior year (can get it twice)
+    * UW-Madison nominates two students (school nomination is hardest part)
     * Previous recipients:
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
         
@@ -67,10 +74,14 @@ _Highlights and notes about known student-centric funding and education programs
 * [National Science Foundation - Graduate Research Fellowship Program](https://www.nsfgrfp.org/)
     * Undergraduate Senior or first two years Graduate
     * $138,000 (three years of support)
+    * 1/6 get it, closer to 1/3 because many applications get tossed for not exactly following their format
+    * Lots of good resources online
+    * Formatted as a research proposal, but evaluated as supporting an individual ('investing in them')
     * Application notes:
-        * Research plan
-        * Personal statement 
-        * 3 recommendation letters 
+        * Research plan (don't need to actually do that research)
+        * Personal statement
+            * Focus is on personal research passion/experience
+        * 3 recommendation letters
         * Two attempts per student: 1 undergraduate, 1 graduate
     * Previous recipients:
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
@@ -78,23 +89,30 @@ _Highlights and notes about known student-centric funding and education programs
         
 * [Undergraduate Research Scholars (URS)](https://urs.ls.wisc.edu/)
     * Undergraduate (Freshman/Sophomore)
-    * _Unpaid_
-    * For experience for credit
-    * Dan sets up a [listing](https://urs.ls.wisc.edu/mentors/)
-    * Present at symposium
+    * Build mini-community with other scholars
+    * No pay, only experience and 2-3 credits
+    * Low-commitment and few entry restrictions
+    * Mentor sets up a [listing](https://urs.ls.wisc.edu/mentors/)
+    * Mentors can be faculty/staff/grad students, not _just_ Dan
+    * Present at Undergraduate Research Symposium
+    * [Application notes:](https://urs.ls.wisc.edu/scholars/)
+        * Fairly short application, very easy to get in
+        * Dan can request multiple students and have them work in a group
     * Previous participants:
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
         
         
 * [Goldwater](https://awards.advising.wisc.edu/all-scholarships/goldwater-scholarship/)
     * Undergraduate (Sophomore/Junior with PhD/Research interest)
-    * $7,500/year toward undergraduate expenses junior/senior year
-    * 3.8+ GPA 
+    * $7,500/year toward undergraduate expenses Junior/Senior year
+    * 3.8+ GPA
     * US citizen
     * Application notes:
         * Tough competition
-        
-        
+        * Lots of long essays, focus on PhD research passion
+    * UW has lots of alums with this and lots of resources
+    
+    
 * [Department of Energy - Computational Science Graduate Fellowship](https://www.krellinst.org/csgf/how-apply)
     * Undergraduate Senior and first year Graduate
     * $37,000 yearly (up to four years)
