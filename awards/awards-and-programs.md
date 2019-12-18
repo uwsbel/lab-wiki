@@ -13,6 +13,7 @@ _Highlights and notes about known student-centric funding and education programs
         * [Nic Olsen](mailto:nicholas.olsen@wisc.edu)
         * [Conlain Kelly](mailto:ckelly5@wisc.edu)
         * Dylan Hatch
+        * Felipe Gutierrez Barragan
         
         
 * [Hilldale Fellowship](https://awards.advising.wisc.edu/all-scholarships/hilldale-undergraduatefaculty-research-fellowship/)
