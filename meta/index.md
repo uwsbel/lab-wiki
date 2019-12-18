@@ -1,7 +1,7 @@
 # Meta Topics
 
 #### Index
-- [Adding a Page](/meta/adding-a-page.html)
-- [Editing the Source](/meta/editing-the-source.html)
-- [Linking to Other Pages](/meta/linking-to-other-pages.html)
-- [Adding an Image](/meta/adding-an-image.html)
+- [Adding a Page](/lab-wiki/meta/adding-a-page.md)
+- [Editing the Source](/lab-wiki/meta/editing-the-source.md)
+- [Linking to Other Pages](/lab-wiki/meta/linking-to-other-pages.md)
+- [Adding an Image](/lab-wiki/meta/adding-an-image.md)

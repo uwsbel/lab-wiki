@@ -24,4 +24,4 @@ When saving your new page, the name of the file should be the same as the title,
 For the example title above, these guidelines would produce the file `dan_s-succinct-and-descriptive-title.md`.
 
 ##### Indexing
-To make it easier for other folks to find your page, you should add it to the `index.md` files in the [project root folder](/index) and the [parent folder](/meta/index) of the page. Files should be added to the list of bullet points as a link in the relevant section on the index page. If you are unclear on how to format the page, use existing entries for guidance.
+To make it easier for other folks to find your page, you should add it to the `index.md` files in the [project root folder](/lab-wiki/index) and the [parent folder](/lab-wiki/meta/index) of the page. Files should be added to the list of bullet points as a link in the relevant section on the index page. If you are unclear on how to format the page, use existing entries for guidance.

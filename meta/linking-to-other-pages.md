@@ -11,13 +11,13 @@ Links to pages which might be moved or renamed should be linked to with absolute
 > Absolute paths begin at the top level of the repository `/` and continue through the directory tree from there. For example, the page you are currently reading is located at `/meta/linking-to-other-pages`.
 
 #### Relative Paths
-Links to or from pages which will always be moved together, or links from _Index Pages_ ([example](/meta/index)) may use relative pathing.
+Links to or from pages which will always be moved together, or links from _Index Pages_ ([example](/lab-wiki/meta/index)) may use relative pathing.
 > Relative paths begin at the parent directory of the current file and continue from there. This allows files which are located in the same directory to be linked with just the file name and no other prefix.
 
 #### Markdown
 For internal links, always use the `[]()` syntax:
 ```markdown
-[text](/absolute/link/path)
+[text](/lab-wiki/absolute/link/path)
 ```
 or
 ```markdown

@@ -1,4 +1,4 @@
 ### Awards
 
 #### Index
-- [Awards and Programs](/awards/awards-and-programs.html)
+- [Awards and Programs](/lab-wiki/awards/awards-and-programs.md)
