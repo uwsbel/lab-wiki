@@ -1,4 +1,4 @@
 ### Awards
 
 #### Index
-- [Awards and Programs](/awards/awards-and-programs)
+- [Awards and Programs](/awards/awards-and-programs.html)
