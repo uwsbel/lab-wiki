@@ -1,4 +1,4 @@
-#Adding A Page
+# Adding A Page
 
 #### Basics
 Adding a new page on the SBEL Wiki is as simple as creating a new file. All you need to do is create a file ending in `.md` and it will be rendered as a Markdown webpage in GitHub. It is highly recommended that you follow the guidelines below when creating a new page; this will help prevent problems when other users wish to link to or edit your page.
@@ -11,7 +11,7 @@ Adding a new page on the SBEL Wiki is as simple as creating a new file. All you 
 Wiki pages should have a descriptive title which clearly identifies what the page is about. Long titles can be cumbersome, so please try to be as succinct as possible. Your title will also become the name of the saved markdown file, so it is important to choose it carefully. The title goes on the top of your new Markdown (`.md`) file and looks something like this:
 
 ```Markdown
-#Dan's Succinct and Descriptive Title
+# Dan's Succinct and Descriptive Title
 
 ... page contents ...
 ```
