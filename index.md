@@ -4,7 +4,7 @@
 - ##### [Meta Topics](/lab-wiki/meta/index.html)
 	- [Adding a Page](/lab-wiki/meta/adding-a-page.html)
 	- [Editing the Source](/lab-wiki/meta/editing-the-source.html)
-	- [Linking to Other Pages](/lab-wiki/meta/linking-to-other-pages.html)
+	- [Linking to Another Page](/lab-wiki/meta/linking-to-another-page.html)
 	- [Adding an Image](/lab-wiki/meta/adding-an-image.html)
 
 - ##### [Lab Communications](/lab-wiki/communication/index.html)

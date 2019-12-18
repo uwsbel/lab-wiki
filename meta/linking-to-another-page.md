@@ -1,4 +1,4 @@
-# Linking to Other Pages
+# Linking to Another Page
 
 Linking to another page in [GitHub Pages](https://help.github.com/en/github/working-with-github-pages) can be rather tricky. GitHub supports a number of conventions which novice and experienced users alike might find unintuitive. Please review the information below for the preferred conventions to use in this wiki.
 
@@ -14,7 +14,7 @@ When linking to pages contained within a local repository, GitHub supports using
 #### Absolute Paths
 
 Links to pages which might be moved or renamed should be linked to with absolute paths to make _Find and Replace_ operations easier for the individual who is performing the move.
-> Absolute paths begin at the top level of the repository `/lab-wiki/` and continue through the directory tree from there. For example, the page you are currently reading is located at `/lab-wiki/meta/linking-to-other-pages`.
+> Absolute paths begin at the top level of the repository `/lab-wiki/` and continue through the directory tree from there. For example, the page you are currently reading is located at `/lab-wiki/meta/linking-to-another-page`.
 
 #### Relative Paths
 
