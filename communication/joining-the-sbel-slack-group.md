@@ -1,4 +1,4 @@
-### Joining the SBEL Slack Group
+#Joining the SBEL Slack Group
 
 #### Step 1
 Point your browser to [uwsbel.slack.com](https://uwsbel.slack.com/).

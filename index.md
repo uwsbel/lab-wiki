@@ -1,11 +1,11 @@
-### Simulation Based Engineering Lab Wiki
+#Simulation Based Engineering Lab Wiki
 
 #### Index
 - ##### [Meta Topics](/meta/index.md)
 	- [Adding a Page](/meta/adding-a-page.md)
-	- [Downloading Wiki Source Code](/meta/editing-the-source.md)
+	- [Editing the Source](/meta/editing-the-source.md)
 	- [Linking to Other Pages](/meta/linking-to-other-pages.md)
-	- [Adding an Image](/meta/adding-a-page.md)
+	- [Adding an Image](/meta/adding-an-image.md)
 
 - ##### [Lab Communications](/communication/index.md)
 	- [Joining the SBEL Slack Group](/communication/joining-the-sbel-slack-group.md)

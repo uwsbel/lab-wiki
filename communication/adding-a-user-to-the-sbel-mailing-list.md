@@ -1,4 +1,4 @@
-### Adding a User to the SBEL Mailing List
+#Adding a User to the SBEL Mailing List
 
 > **NOTE:** For the following steps to work, you must log in to Google Groups with your wisc.edu email address.
 

@@ -1,4 +1,4 @@
-### Lab Communications
+#Lab Communications
 
 #### Index
 - [Joining the SBEL Slack Group](/communication/joining-the-sbel-slack-group.md)
