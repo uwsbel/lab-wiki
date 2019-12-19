@@ -13,3 +13,6 @@
 
 - ##### [Awards](/lab-wiki/awards/index.html)
     - [Awards and Programs](/lab-wiki/awards/awards-and-programs.html)
+
+- ##### [Lab Assets](/lab-wiki/lab-assets/index.html)
+    - [Accessing SVN](/lab-wiki/lab-assets/accessing-svn.html)
