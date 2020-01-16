@@ -17,3 +17,6 @@
 - ##### [Lab Assets](/lab-wiki/lab-assets/index.html)
     - [Accessing SVN](/lab-wiki/lab-assets/accessing-svn.html)
 	- [Using the CAE Workstations](/lab-wiki/lab-assets/using-the-cae-workstations.html)
+
+- ##### [Technical Help](/lab-wiki/technical/index.html)
+	- [Workflows](/lab-wiki/technical/workflows.html)
