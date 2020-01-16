@@ -21,19 +21,19 @@ Microsoft's Visual Studio Code (and its Open Source variants) is an extensible c
 
 ##### Setting up remote access
 
-1. Install the **Remote - SSH** extension
+###### 1. Install the **Remote - SSH** extension
  - Access the extensions menu (Ctrl+Shift+X)
  - Search for `Remote - SSH` and click the "Install" button
 
 ![The Extensions menu](/lab-wiki/images/technical/vscode_extensions.png)
 
-2. Add a new host (_optional_)
+###### 2. Add a new host (_optional_)
  - Open the **Remote Explorer** pane, this can be done by clicking on the sidebar icon or using the command palette
  - Mouse over the **SSH TARGETS** heading and click on the + that appears to add a new SSH endpoint
  - Type the `ssh` command you would use to access that server in the popup dialog
 
 ![Add an SSH endpoint](/lab-wiki/images/technical/vscode_add_endpoint.png)
  
-3. Connect to a remote machine
+###### 3. Connect to a remote machine
  - Open the **Remote Explorer** pane, this can be done by clicking on the sidebar icon or using the command palette
  - Mouse over target machine from the list of **SSH TARGETS** and click on the icon that appears to the right of the pane to "Connect to Host in New Window"
