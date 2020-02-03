@@ -41,6 +41,9 @@ Users who have previously used a given workstation may be able to select their n
 ##### Linux Machines (Remote)
 SBEL's Linux workstations are also available via SSH. They should be visible from within the CAE or ME networks, so it should be possible to connect from the [Engineering VPN](https://kb.wisc.edu/cae/84859).
 
+Most machines hostnames are `<name>.sbel.wisc.edu` so `wilson.sbel.wisc.edu`.
+Tesla happens to be different and is  `tesla.sbel.wisc.edu.engr.wisc.edu`. 
+
 #### Adding New Software
 On Linux Machines, SBEL members should be able to use the appropriate package manager (_e.g._ `dnf`, `apt`, `pacman`) to install new software. Non-SBEL folks will need to contact a system administrator in order to have the software installed.
 
