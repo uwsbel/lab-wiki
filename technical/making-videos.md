@@ -18,6 +18,7 @@ Go to the directory with your images and run the command:
     ffmpeg -r <fps> -f image2 -s <resolution> -i <path_to_images>/frame_%d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p <output_name>.mp4
 
 Where `fps` is the frames per second (e.g. 60) and `resolution` is something like 1920x1080.
+The `crf` flag specifies the compression ratio and you may want to tweak it if your video unexplicably looks lower quality, 15-25 tends to be good enough (lower means less compression).
 The path you pass to the i flag is mostly a normal path except for the last part where you specify the naming pattern for your images.
 Mine were called `frame_1.png`, `frame_2.png`, ... `frame_213.png`, etc... so you can see in the example above the `%d` specifier tells `ffmpeg` to look for an incrementing integer (it will complain about any gaps) at the end of the images names.
 You can read about more complex filename patterns [on wikibooks](https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence#Filename_patterns).
@@ -37,3 +38,7 @@ Many of the Chrono overlays are just as large as a typical video so 0:0 works ju
 ## Share the video
 
 The Animations folder on Box is a good place for most images.
+
+## Other Resources
+
+SBEL alum Hammad Mazhar also has a [wonderful page](https://hamelot.io/) on this exact topic!
