@@ -20,3 +20,4 @@
 
 - ##### [Technical Help](/lab-wiki/technical/index.html)
 	- [Workflows](/lab-wiki/technical/workflows.html)
+	- [Making Videos](/lab-wiki/technical/making-videos.html)
