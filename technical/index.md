@@ -2,4 +2,4 @@
 
 #### Index
 - [Workflows](/lab-wiki/technical/workflows)
-- [making Videos](/lab-wiki/technical/making-videos)
+- [Making Videos](/lab-wiki/technical/making-videos)
