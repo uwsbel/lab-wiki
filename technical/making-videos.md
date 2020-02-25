@@ -27,13 +27,17 @@ You can read about more complex filename patterns [on wikibooks](https://en.wiki
 
 Good branding is important, so don't send out a video without a Chrono or SBEl watermark.
 You can find a couple of options in the [Animations/Overlay](https://uwmadison.box.com/s/nnfg6vsupmydz0gbhqgbh5ta06dl75vw) folder on the Box.
-You'll also use ffmpeg to add the watermark, I suppose it's possible there's a nifty one-step command to string the pngs and add a watermark all at once but walk before you run as they say.
+You'll also use ffmpeg to add the watermark, if you already have a video, you can use this command.
 
     ffmpeg -i input.mp4 -i watermark.png -filter_complex "overlay=0:0" output.mp4
 
 The options should be self-explanatory.
 If your overlay isn't the same size as your video, you can use the `overlay=x:y` option to position it's top left corner properly (0, 0 is in the top left corner, with the positive direction being bottom right).
 Many of the Chrono overlays are just as large as a typical video so 0:0 works just fine.
+
+To go for both watermark and stringing the images together in one step, you can use this formulation, courtesy of Radu
+
+    ffmpeg -r 60 -f image2 -s 1920x1080 -i img%04d.png -i chrono_overlay_ll.png -filter_complex "[0:v][1:v] overlay=0:0" -vcodec libx264 -crf 25 -pix_fmt yuv420p anim.mp4
 
 ## Share the video
 
