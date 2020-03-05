@@ -1,10 +1,8 @@
 # Workflows
 
-## Remote Access
+_This page used to be a general Workflows page but it only had info about VS code so I (Jay) am re-purposing it_
 
-These workflows are great for working on a computer which is not physically available to the user. In some cases, they also enable one to work on a computer which is already in use by someone else.
-
-#### Visual Studio Code (vscode/code-oss)
+#### Visual Studio Code (vscode/code-oss) - Overview
 
 Microsoft's Visual Studio Code (and its Open Source variants) is an extensible code editor built on the Electron framework. It provides sophisticated code editing along with features familiar to Visual Studio IDE users such as integrated support for interactive debugging and the powerful IntelliSense completion/linting engine.
 
@@ -63,3 +61,29 @@ Visual Studio Code operates on remote systems much like it does locally. The fol
 
  - Press `Ctrl + Tilde` to open a terminal on the remote system using that system's default shell. If a specific remote folder is opened in the **Explorer** pane, the terminal will automatically `cd` to that directory.
  - The `Remote - SSH` plugin has experimental support for remote windows machines as well. Visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) for more information.
+ 
+#### Useful Extensions
+
+These are the extensions that Jay uses in his Synchrono development. There is a snippet at the bottom which will install them all for you if you have blind trust in me.
+
+These all seem to work together to provide C++ Intellisense, etc... CMake Tools took some fiddling to get set-up properly, I will hopefully add a section detailing how I did that.
+- C/C++
+- C++ Intellisense
+- CMake Tools
+
+Misc
+- Settings Sync - Brings across all my settings no matter which workstation (Windows/Linux/etc...) I'm on
+- Surround - Shortcuts to surround code with () "" {} or whatever else you want
+- vscode-cudacpp - Syntax highlighting for CUDA code
+- Remote - SSH - See Colin's wonderful explanations above
+- Remote - SSH: Editing Config Files - Not quite sure what this adds beyond the normal Remote - SSH extension
+
+Install Jay's extensions (to be pasted into a Linux prompt):
+
+    code --install-extension kriegalex.vscode-cudacpp
+    code --install-extension ms-vscode-remote.remote-ssh
+    code --install-extension ms-vscode-remote.remote-ssh-edit
+    code --install-extension ms-vscode.cmake-tools
+    code --install-extension ms-vscode.cpptools
+    code --install-extension Shan.code-settings-sync
+    code --install-extension yatki.vscode-surround
