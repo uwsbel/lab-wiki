@@ -1,5 +1,5 @@
 # Technical Help
 
 #### Index
-- [Workflows](/lab-wiki/technical/workflows)
+- [VS Code](/lab-wiki/technical/vscode)
 - [Making Videos](/lab-wiki/technical/making-videos)
