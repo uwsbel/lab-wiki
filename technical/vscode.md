@@ -69,7 +69,8 @@ These are the extensions that Jay uses in his Synchrono development. There is a 
 These all seem to work together to provide C++ Intellisense, etc... CMake Tools took some fiddling to get set-up properly, I will hopefully add a section detailing how I did that.
 - C/C++
 - C++ Intellisense
-- CMake Tools
+- CMake Tools - This does the actual build
+- CMake - This gets you syntax highlighting
 
 Misc
 - Settings Sync - Brings across all my settings no matter which workstation (Windows/Linux/etc...) I'm on
@@ -78,7 +79,7 @@ Misc
 - Remote - SSH - See Colin's wonderful explanations above
 - Remote - SSH: Editing Config Files - Not quite sure what this adds beyond the normal Remote - SSH extension
 
-Install Jay's extensions (to be pasted into a Linux prompt):
+The command to list your installed extensions is `code --list-extensions | xargs -L 1 echo code --install-extension`, sourced from [this post](https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list). Install Jay's extensions (to be pasted into a Linux prompt),:
 
     code --install-extension kriegalex.vscode-cudacpp
     code --install-extension ms-vscode-remote.remote-ssh
@@ -87,6 +88,7 @@ Install Jay's extensions (to be pasted into a Linux prompt):
     code --install-extension ms-vscode.cpptools
     code --install-extension Shan.code-settings-sync
     code --install-extension yatki.vscode-surround
+    code --install-extension twxs.cmake
 
 #### CMake Build Process From VS Code
 
