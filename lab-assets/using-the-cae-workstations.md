@@ -44,6 +44,27 @@ SBEL's Linux workstations are also available via SSH. They should be visible fro
 Most machines hostnames are `<name>.sbel.wisc.edu` so `wilson.sbel.wisc.edu`.
 Tesla happens to be different and is  `tesla.sbel.wisc.edu.engr.wisc.edu`. 
 
+##### Remote Display Forwarding (Linux -> Windows)
+
+There may be cases where you want to compile code on Linux (e.g. when [editing code remotely](https://github.com/uwsbel/lab-wiki/blob/master/technical/vscode.md#setting-up-remote-access), but display the output on a Windows home machine or laptop. 
+You can do this with XForwarding, ssh will send the X11 graphics display commands via ssh to a waiting X11 server running on your home machine (that you will have to set up) which will then display the output of these commands. 
+**Note** this will not work for OptiX-based graphics, only for Irrlicht (or say, Firefox, but what's the point in that?). 
+This section written by Jay, send all complaints to him.
+
+###### Local Machine steps
+1. Download and install [XMing](https://sourceforge.net/projects/xming/) on your Windows machine
+2. Start the server when you want to XForward
+3. When connecting via ssh, pass the Y flag, `ssh -Y user@myhost`. You can also include the line `ForwardX11 yes` in the block for your host within your `~/.ssh/config` file.
+
+###### Remote Machine steps
+1. `echo $DISPLAY` should return `localhost:10.0`, if it does not you can `export DISPLAY=localhost:10.0` 
+2. You may also need to edit your `/etc/ssh/sshd_config` file since X11 Forwarding is likely disabled there by default
+3. After editing the sshd file you should restart the ssh daemon with `sudo systemctl restart sshd`
+
+##### Remote Display Forwarding (Linux -> OS X)
+
+_If you have done this, please fill in this section!_
+
 #### Adding New Software
 On Linux Machines, SBEL members should be able to use the appropriate package manager (_e.g._ `dnf`, `apt`, `pacman`) to install new software. Non-SBEL folks will need to contact a system administrator in order to have the software installed.
 
