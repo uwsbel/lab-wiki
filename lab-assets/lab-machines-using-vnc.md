@@ -3,8 +3,7 @@
 #### Connecting to College of Engineering VPN
 * To access SBEL lab machines, you must connect to the College of Engineering VPN.
 
-* For Windows or MacOS users, you will have to download a VPN client, GlobalProtect is recommended. There are two portal addresses available
-* to Graduate Students and Staff: `engr-full.vpn.wisc.edu` and `engr-split.vpn.wisc.edu`. More information on accessing COE VPN can be found [here](https://kb.wisc.edu/cae/page.php?id=5573).
+* For Windows or MacOS users, you will have to download a VPN client, GlobalProtect is recommended. There are two portal addresses available to Graduate Students and Staff: `engr-full.vpn.wisc.edu` and `engr-split.vpn.wisc.edu`. More information on accessing COE VPN can be found [here](https://kb.wisc.edu/cae/page.php?id=5573).
 
 * Linux users may use a VPN client, such as OpenConnect as an altenative to GlobalProtect. Use the same portal addresses as above to connect. 
 
