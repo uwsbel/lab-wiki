@@ -90,27 +90,34 @@ The command to list your installed extensions is `code --list-extensions | xargs
     code --install-extension yatki.vscode-surround
     code --install-extension twxs.cmake
 
-#### CMake Build Process From VS Code
+#### How to get Intellisense working
 
-I have no problem just building from the commandline, but it seems like to get the full Intellisense (picking up includes properly, etc...) you need to run CMake. Problem is that out of the box CMake doesn't pass all of the necessary flags to Chrono and Synchrono so it fails and complains. 
+There seem to be two problems with VS Code's Intellisense. The normal one doesn't pick up all of the include paths correctly and complains about missing dependencies. You can probably solve this by painstakingly setting the include path properly within VS Code's settings but this would be pretty fragile. It turns out you can also have the CMake extension handle the intellisense and the include path settings. This seems to work very well and as a nice side effect you can hit the "build" button in VS Code and it will build your whole project for you so you could ditch the command line if you wanted.
 
-You may also want to select a `kit` for both of the builds below, this seems to be equivalent to selecting a compiler (i.e. gcc 9.2.0 worked fine for me).
+##### Select a Kit
 
-##### Add CMake flags for Chrono
+You'll need to select a `kit` for both of the builds below, this seems to be equivalent to selecting a compiler (i.e. gcc 9.2.0 worked fine for me), in general just pick the most recent version of gcc that it offers you.
+![Select Kit](/lab-wiki/images/vscode/select_kit.png)
 
-It doesn't seem like CMake wants to play nice with Chrono as a subdirectory of Synchrono, so I opened Chrono in a separate VS Code Window so that Chrono could be the root and ran CMake from there. CMake looks for flags in `/home/<user>/synchrono/chrono/chrono-dev/.vscode/settings.json` for example. If you have nothing else in your `settings.json`, just paste this in
+##### Set CMake flags for Chrono
 
-    {
-        "cmake.configureSettings": {
-            "CMAKE_BUILD_TYPE": "Release",
-            "OptiX_INSTALL_DIR": "/home/${env:USER}/libraries/NVIDIA-OptiX-SDK-6.0.0-linux64",
-            "ENABLE_MODULE_VEHICLE": "ON",
-            "ENABLE_MODULE_SENSOR": "ON",
-            "ENABLE_MODULE_IRRLICHT": "ON"
-        }
-    }
-    
-This should work on Arch, on CentOS (Wilson), you'll have to add the `MPI` flags (or generally, whatever particular flags that you need). This should be all you need, you should now be able to click the build button or run the build (or configure or generate...) commands to get Chrono running.
+It doesn't seem like CMake wants to play nice with Chrono as a subdirectory of Synchrono, so I opened Chrono in a separate VS Code Window so that Chrono could be the root and ran CMake from there. CMake's VS Code extension looks for flags in `/home/<user>/synchrono/chrono/chrono-dev/.vscode/settings.json` for example. If you have nothing else in your `settings.json`, just paste this in
+```javascript
+{
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "OptiX_INSTALL_DIR": "/home/${env:USER}/libraries/NVIDIA-OptiX-SDK-6.0.0-linux64",
+        "ENABLE_MODULE_VEHICLE": "ON",
+        "ENABLE_MODULE_SENSOR": "ON",
+        "ENABLE_MODULE_IRRLICHT": "ON",
+        //"MPI_C_COMPILE_OPTIONS": "-fexceptions",
+        //"MPI_CXX_COMPILE_OPTIONS": "-fexceptions"
+    },
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
+}
+```
+
+This has been tested on Arch and Ubuntu. On CentOS (Wilson) you'll need to uncomment the bottom two flags. The default configuration provider line tells VS Code that it should look to the CMake-tools extension to provide its intellisense data. This should be all you need, you should now be able to click the build button or run the build (or configure or generate...) commands to get Chrono running.
 
 ##### Add CMake flags for Synchrono
 
