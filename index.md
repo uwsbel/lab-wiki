@@ -17,6 +17,7 @@
 - ##### [Lab Assets](/lab-wiki/lab-assets/index.html)
     - [Accessing SVN](/lab-wiki/lab-assets/accessing-svn.html)
 	- [Using the CAE Workstations](/lab-wiki/lab-assets/using-the-cae-workstations.html)
+	- [Lab Machines Using VNC](/lab-wiki/lab-assets/lab-machines-using-vnc.html)
 
 - ##### [Technical Help](/lab-wiki/technical/index.html)
 	- [VS Code](/lab-wiki/technical/vscode.html)
