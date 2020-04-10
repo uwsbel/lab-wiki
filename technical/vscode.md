@@ -79,7 +79,7 @@ Misc
 - Remote - SSH - See Colin's wonderful explanations above
 - Remote - SSH: Editing Config Files - Not quite sure what this adds beyond the normal Remote - SSH extension
 
-The command to list your installed extensions is `code --list-extensions | xargs -L 1 echo code --install-extension`, sourced from [this post](https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list). Install Jay's extensions (to be pasted into a Linux prompt),:
+The command to list your installed extensions is `code --list-extensions | xargs -L 1 echo code --install-extension`, sourced from [this post](https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list). Install Jay's extensions (to be pasted into a shell):
 
     code --install-extension kriegalex.vscode-cudacpp
     code --install-extension ms-vscode-remote.remote-ssh
@@ -98,12 +98,12 @@ You may also want to select a `kit` for both of the builds below, this seems to 
 
 ##### Add CMake flags for Chrono
 
-It doesn't seem like CMake wants to play nice with Chrono as a subdirectory of Synchrono, so I opened Chrono in a separate VS Code Window so that Chrono could be the root and ran CMake from there. CMake looks for flags in `/home/<user>/synchrono/chrono/chrono-dev/.vscode/settings.json` for example. If you have nothing else in your `settings.json`, just paste this in
+It doesn't seem like CMake wants to play nice with Chrono as a subdirectory of Synchrono, so I opened Chrono in a separate VS Code window/workspace so that Chrono could be the root and ran CMake from there. CMake looks for flags in `/home/<user>/synchrono/chrono/chrono-dev/.vscode/settings.json` for example. These are in general whichever specific CMake flags that you need to build Chrono with. If you have nothing else in your `settings.json`, just paste this in
 
     {
         "cmake.configureSettings": {
             "CMAKE_BUILD_TYPE": "Release",
-            "OptiX_INSTALL_DIR": "/home/${env:USER}/libraries/NVIDIA-OptiX-SDK-6.0.0-linux64",
+            "OptiX_INSTALL_DIR": "${env:HOME}/libraries/NVIDIA-OptiX-SDK-6.0.0-linux64",
             "ENABLE_MODULE_VEHICLE": "ON",
             "ENABLE_MODULE_SENSOR": "ON",
             "ENABLE_MODULE_IRRLICHT": "ON"
