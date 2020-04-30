@@ -25,7 +25,7 @@ You can read about more complex filename patterns [on wikibooks](https://en.wiki
 
 ## Add a Chrono Watermark
 
-Good branding is important, so don't send out a video without a Chrono or SBEl watermark.
+Good branding is important, so don't send out a video without a Chrono or SBEL watermark.
 You can find a couple of options in the [Animations/Overlay](https://uwmadison.box.com/s/nnfg6vsupmydz0gbhqgbh5ta06dl75vw) folder on the Box.
 You'll also use ffmpeg to add the watermark, if you already have a video, you can use this command.
 
