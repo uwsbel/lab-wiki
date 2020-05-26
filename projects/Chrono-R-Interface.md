@@ -46,7 +46,10 @@ You will have to enter your password again as you switch over to Curie.
 
 ##### Link to SynChrono-NSF Directory
 
+Now that you're on Curie, you'll want to create a symbolic link from the shared project directory to a directory in your home directory.
+You can do this with:
 
+`ln -sv /srv/home/synchrono-nsf ~/synchrono-nsf`
 
 #### Connecting
 
@@ -65,7 +68,7 @@ When this command completes you will be left on Euler, it is a good practice to 
 
 Open up your favorite browser and go to [localhost:8787](http://localhost:8787/). 
 
-#### RStudio Points
+##### RStudio Points
 
 _Screenshot here that points out key features of the interface..._
 
