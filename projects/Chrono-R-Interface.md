@@ -51,13 +51,18 @@ You can do this with:
 
 `ln -sv /srv/home/synchrono-nsf ~/synchrono-nsf`
 
-#### Connecting
+##### Wrapping up
+
+When you are done using the cluster you can exit by typing `exit` twice, once to leave Curie and again to leave the head node. 
+This will leave you back on the terminal for your local computer (typing `exit` here should quit your local terminal also).
+
+#### Connecting to RStudio
 
 ##### Port Redirection
 
 With your account set up, you are now ready to connect up to RStudio.
 The first step is to configure port-forwarding to tell your browser where to look for RStudio.
-For that you should again go to your terminal and type the command `ssh -C -L 8787:curie:8787 jay@euler.wacc.wisc.edu`.
+For that you should again go to your (local, i.e. neither Euler nor Curie) terminal and type the command `ssh -C -L 8787:curie:8787 jay@euler.wacc.wisc.edu`.
 You will have to type in your password twice, once to connect to the headnode and again to connect to Curie.
 
 ![Port-redirection](/lab-wiki/images/projects/port-redirection.png)
@@ -66,11 +71,33 @@ When this command completes you will be left on Euler, it is a good practice to 
 
 ##### Connect to RStudio
 
-Open up your favorite browser and go to [localhost:8787](http://localhost:8787/). 
+Open up your favorite browser and go to [localhost:8787](http://localhost:8787/), the login credentials are the same ones that you use for Euler.
+Once logged in, the interface should look somewhat familiar to the normal RStudio interface.
+The main piece of setup you should do is to change your working directory in the bottom right corner to `home/synchrono-nsf/Rtest` which is where all the files for the project will go for now.
 
-##### RStudio Points
+![Change working directory](/lab-wiki/images/projects/setwd.png)
 
-_Screenshot here that points out key features of the interface..._
+Next, to work with the Chrono functions, you'll have to `source` in the `loadChronoR.R` file which links several C++ dynamic libraries and then loads the ChronoR R-package.
+When the load completes successfully, you're ready to start calling C++ functions that have been linked over, for example `doLeadFollowerSimulation`.
+
+![Load ChronoR](/lab-wiki/images/projects/load-chrono-R.png)
+
+##### Available Functions
+
+Currently there are two functions available
+
+    [["x_position"] ["realtime"]] <- doLeadFollowerSimulation( sim_time )
+    [["x_position"] ["speed"] ["realtime"]] <- doLeadFollowerSimulationData( sim_time, l_times, l_steering, l_throttle, l_braking, f_times, f_steering, f_throttle, f_braking )
+
+where the `sim_time` argument is a number in seconds indicating how long the simulation should run for and the arguments to `doLeadFollowerSimulationData` are vectors of numbers indicating the three input parameters for the lead (l) and following (f) vehicles. 
+
+For example
+
+    data <- doLeadFollowerSimulationData(10, c(0, 5), c(0, 0), c(1, 0), c(0, 0), c(0, 5), c(0, 0), c(1, 0), c(0, 0))
+
+will have both the lead and following vehicles go to full throttle starting at time 0 and both completely step off the throttle at time 5. 
+They will both drive straight ahead (steering = 0) and never brake.
+I am still looking into more straightforward ways to pass arguments and to document the available functions (ideally automatically through R).
 
 #### Other Resources
 
