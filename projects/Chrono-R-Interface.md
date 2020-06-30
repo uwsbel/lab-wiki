@@ -82,12 +82,16 @@ When the load completes successfully, you're ready to start calling C++ function
 
 ![Load ChronoR](/lab-wiki/images/projects/load-chrono-R.png)
 
+#### Documentation
+
+There are probably better places for documentation (e.g. within the R package itself), but for now it will live here
+
 ##### Available Functions
 
-Currently there are two functions available
+Currently there are two main functions available:
 
-    [["x_position"] ["realtime"]] <- doLeadFollowerSimulation( sim_time )
-    [["x_position"] ["speed"] ["realtime"]] <- doLeadFollowerSimulationData( sim_time, l_times, l_steering, l_throttle, l_braking, f_times, f_steering, f_throttle, f_braking )
+    data <- doLeadFollowerSimulationData( sim_time, l_times, l_steering, l_throttle, l_braking, f_times, f_steering, f_throttle, f_braking )
+    data <- doLeadFollowerSimulationRDriver( sim_time, lead_fn, following_fn )
 
 where the `sim_time` argument is a number in seconds indicating how long the simulation should run for and the arguments to `doLeadFollowerSimulationData` are vectors of numbers indicating the three input parameters for the lead (l) and following (f) vehicles. 
 
@@ -97,7 +101,14 @@ For example
 
 will have both the lead and following vehicles go to full throttle starting at time 0 and both completely step off the throttle at time 5. 
 They will both drive straight ahead (steering = 0) and never brake.
-I am still looking into more straightforward ways to pass arguments and to document the available functions (ideally automatically through R).
+
+The arguments for `doLeadFollowerSimulationRDriver` are a function to serve as the brain for the leader and a function to server as the brain for the follower. There is an example function ready to go in `sampleRDrivers.R`, so if you `source("sampleRDrivers.R")` you can then call 
+
+    data <- doLeadFollowerSimulationRDriver(10, lead_fn, following_fn)
+
+Reading the sample function in `sampleRDrivers.R` helps to show the format that a custom function should take. The input arguments will be a list with four entries: longitudinal position, longitudinal speed, the simulation step size and the current simulation time. The output from the custom function should also be a list with three values: throttle, steering and braking. Throttle and braking both be in the range [0, +1] and steering should be in the range [-1, 1] where -1 represents turned fully towards the left.
+
+The output from both functions are the same - a list of four elements; the longitudinal position of the following vehicle, the longitudinal speed of the following vehicle, the times (every time step) that those measurements were taken, and the real time factor that the simulation ran in.
 
 #### Other Resources
 
