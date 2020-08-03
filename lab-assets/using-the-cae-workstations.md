@@ -16,7 +16,7 @@ These workstations are provided for the convenience of everybody in lab, and as 
 
 The login procedure varies slightly between Windows and Linux workstations, so please read the appropriate guidelines below.
 
-##### Windows Machines
+##### Windows Machines (Local)
 Log in to windows from the sign-in screen using your CAE username and password.
 
 > **If there is no option to enter a username...** \
@@ -26,6 +26,11 @@ When signing in, the user should ensure that the text below the password prompt 
 
 > **If the listed domain is not ENGR...** \
 > Type your username as `ENGR\user` where "user" is replaced with your CAE account name.
+
+##### Windows Machines (Remote)
+You can use Remote Desktop Connection to log-in to the windows machine (Washington) remotely, with the same credentials as above. If you get an error about not being authorized for remote login, you may have to contact Colin who will have to put in a request for CAE remote access.
+
+![Remote Desktop Connection](/lab-wiki/images/technical/washington-login.png)
 
 ##### Linux Machines (Local)
 SBEL's Linux workstations typically use GDM as a login manager in order to provide users with a more consistent UI. This may, however, lead to confusion for new users who aren't yet familiar with the interface. Logging in should be as easy as entering a CAE Username and Password.
