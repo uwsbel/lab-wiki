@@ -28,7 +28,7 @@ When signing in, the user should ensure that the text below the password prompt 
 > Type your username as `ENGR\user` where "user" is replaced with your CAE account name.
 
 ##### Windows Machines (Remote)
-You can use Remote Desktop Connection to log-in to the windows machine (Washington) remotely, with the same credentials as above. If you get an error about not being authorized for remote login, you may have to contact Colin who will have to put in a request for CAE remote access.
+You can use Remote Desktop Connection to log-in to the windows machine (Washington) remotely, with the same credentials as above. If you get an error about not being authorized for remote login, send an email to [Josh](https://directory.engr.wisc.edu/services/Staff/Jankowski_Joshua/) and cc Dan.
 
 ![Remote Desktop Connection](/lab-wiki/images/technical/washington-login.png)
 
