@@ -10,7 +10,12 @@ You can use `git-bash` to navigate and clone repositories as you would do on Lin
 
 The [Project Chrono installation guide](http://api.projectchrono.org/tutorial_install_chrono.html) has Windows screenshots to help you through the process.
 
-On Washington specifically, many files will be on the C drive while others (e.g. your copy of the repo) will be on the I drive. This causes a problem with CMake where it can't properly read some files.
+On Washington specifically, many files will be on the C drive while others (e.g. your copy of the repo) will be on the I drive. This causes a problem with CMake where it can't properly read some files, failing with an error along the lines of `CMake Error: Unable to open check cache file for write. .../some_directory/.../CMakeFiles/CMakeTmp/CMakeFiles/cmake.check_cache`. You should be able to resolve it by issuing this command from a terminal:
+```bash
+mkdir ...\path_to\...\chrono_build\CMakeFiles\CMakeTmp\CMakeFiles
+start cmd /c "cd /d ...\path_to\...\chrono_build\CMakeFiles\CMakeTmp\CMakeFiles && pause"
+```
+My understanding of this issue came from [here](https://gitlab.kitware.com/cmake/cmake/-/issues/18086).
 
 ## Dependencies and CMake Flags
 
