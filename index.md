@@ -22,6 +22,7 @@
 - ##### [Technical Help](/lab-wiki/technical/index.html)
 	- [VS Code](/lab-wiki/technical/vscode.html)
 	- [Making Videos](/lab-wiki/technical/making-videos.html)
+    - [Testing on Windows](/lab-wiki/technical/testing-on-windows)
 
 - ##### [Projects](/lab-wiki/projects/index.html)
     - [Chrono to R Interface](/lab-wiki/projects/Chrono-R-Interface.html)
