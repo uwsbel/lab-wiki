@@ -25,6 +25,10 @@ For header-only libraries or libraries with pre-compiled binaries, check in `C:/
 
 Dependencies that need to be installed will required admin permissions, for this you should ask Colin.
 
+### Chrono::Irrlicht
+
+`IRRLICHT_ROOT` seems to always get incorrectly auto-populated. It should be `C:/Users/Public/chrono_libraries/irrlicht-1.8.4` (as described in the normal [Project Chrono installation guide](http://api.projectchrono.org/tutorial_install_chrono.html)).
+
 ### Chrono::Sensor
 
 CUDA is installed in `C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/<version>` and its variables should populate automatically. OptiX 6.5.0 is installed in `C:/ProgramData/NVIDIA Corporation/OptiX SDK 6.5.0`.
