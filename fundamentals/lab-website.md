@@ -6,6 +6,8 @@ The lab website is edited through [UW wordpress](https://wiscweb.wisc.edu/), you
 
 Once you're logged in, you can access the SBEL site from the dropdown in the top left under "My sites".
 
+![Accessing the SBEL site](/lab-wiki/images/fundamentals/access_site.png)
+
 ## What to add?
 
 ### People Page
