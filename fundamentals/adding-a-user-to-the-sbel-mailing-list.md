@@ -7,11 +7,11 @@ Visit the [SBEL](https://groups.google.com/a/g-groups.wisc.edu/forum/#!forum/sbe
 
 #### Step 2
 Select the "Manage members" heading above the list of messages.
-![Manage Members](/lab-wiki/images/communication/ggroups_manage_members.png)
+![Manage Members](/lab-wiki/images/fundamentals/ggroups_manage_members.png)
 
 #### Step 3
 Select "Invite members" from the sidebar on the left side of the page. You may need to expand the `> Members` submenu to see this option.
-![Invite members](/lab-wiki/images/communication/ggroups_invite_members.png)
+![Invite members](/lab-wiki/images/fundamentals/ggroups_invite_members.png)
 
 #### Step 4
 Fill out the resulting form with the email address(es) and a brief welcome message, the submit. The recipient will receive an invite to join the list shortly.

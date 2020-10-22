@@ -5,7 +5,7 @@ Point your browser to [uwsbel.slack.com](https://uwsbel.slack.com/).
 
 #### Step 2
 Click below the sign-in panel on "create an account"
-![The link should be located here](/lab-wiki/images/communication/slack_signup.png)
+![The link should be located here](/lab-wiki/images/fundamentals/slack_signup.png)
 
 #### Step 3
 Follow the on-screen instructions to finish creating your account. **Be sure to use an email addresss ending in wisc.edu!**

@@ -7,9 +7,10 @@
 	- [Linking to Another Page](/lab-wiki/meta/linking-to-another-page.html)
 	- [Adding an Image](/lab-wiki/meta/adding-an-image.html)
 
-- ##### [Lab Communications](/lab-wiki/communication/index.html)
-	- [Joining the SBEL Slack Group](/lab-wiki/communication/joining-the-sbel-slack-group.html)
-	- [Adding a user to the SBEL mailing list](/lab-wiki/communication/adding-a-user-to-the-sbel-mailing-list.html)
+- ##### [Lab Fundamentals](/lab-wiki/fundamentals/index.html)
+	- [Joining the SBEL Slack Group](/lab-wiki/fundamentals/joining-the-sbel-slack-group.html)
+	- [Adding a user to the SBEL mailing list](/lab-wiki/fundamentals/adding-a-user-to-the-sbel-mailing-list.html)
+    - [Editing the lab website](/lab-wiki/fundamentals/lab-website)
 
 - ##### [Awards](/lab-wiki/awards/index.html)
     - [Awards and Programs](/lab-wiki/awards/awards-and-programs.html)
