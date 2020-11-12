@@ -54,3 +54,25 @@ Intel-MPI is installed at `C:/Program Files (x86)/IntelSWTools/` the variables s
 Flatbuffers_DIR=C:\Users\Public\chrono_libraries\flatbuffers\CMake
 Flatbuffers_INCLUDE_DIR=C:\Users\Public\chrono_libraries\flatbuffers\include
 ```
+
+# What to do differently on Windows
+
+There is no substitute for testing and confirming that your code works on Windows, but maybe this short list can help catch some common mistakes.
+
+## \_\_declspec(dllimport/export) via CH\_\<module name\>\_API
+
+On Windows you must explicitly tell the compiler which symbols to export to and import from the dlls that are built. This is done with the `__declspec(dllimport)` and `__declspec(dllexport)`, which in Chrono are aliased via macros (see `ChPlatform.h` and e.g. `ChApiGranular.h`) to properly expand to the correct version of import or export depending on what you are doing. The long and short is that _generally_ all you need to do is declare your classes like
+````c++
+class CH_GRANULAR_API ChMyGranularClassHere {
+    ...
+}
+````
+where `CH_GRANULAR_API` would be replaced by `CH_<other module name>_API` if you are working somewhere else. The specific name for your module is probably in `/src/chrono_somemodule/ChApiSomeModule.h`.
+
+**One exception** is that when you have a class that is fully declared in a header, you **must not** use the `CH_<module name>_API` in the class declaration.
+
+## DLL copying when adding a new external dependency
+
+If you are adding an external dependency to a Chrono module (e.g. Irrlicht, OptiX, etc...) which has a shared library (e.g. `irrlicht.dll`), that dll either needs to be on the user's path or needs to be in the working directory that they launch programs from (the directory that contains `.exe`'s). 
+
+To make the user's life easier, you should add code to our CMake to automatically copy the dll for the user into their build directory. See examples in `src/chrono_modulename/CMakeLists.txt`, e.g. [Chrono::Sensor (OptiX, GLEW)](https://github.com/projectchrono/chrono/blob/452fe87e3451ffe000c2f54b39cf965a0e157315/src/chrono_sensor/CMakeLists.txt#L455). The DLLs should also get added into the list of DLLs that are exported that is maintained in `cmake/ChronoConfig.cmake.in` using `list(APPEND CHRONO_DLLS "@DLL_NAME_HERE@")` in the section appropriate for the specific module.
