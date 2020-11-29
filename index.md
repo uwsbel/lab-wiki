@@ -26,4 +26,5 @@
     - [Testing on Windows](/lab-wiki/technical/testing-on-windows)
 
 - ##### [Projects](/lab-wiki/projects/index.html)
-    - [Chrono to R Interface](/lab-wiki/projects/Chrono-R-Interface.html)
+    - [Chrono to Carla Interface](/lab-wiki/projects/Chrono-Carla-Interface)
+    - [Chrono to R Interface](/lab-wiki/projects/Chrono-R-Interface)
