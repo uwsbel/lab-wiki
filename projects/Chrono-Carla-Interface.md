@@ -8,11 +8,9 @@ Arch's rolling release paradigm means you will likely have a newer version of Cl
 
 ## Create Symlinks
 
-Carla's makefiles look for Clang 8 in a very specific directory which is likely not where you have them installed.
+Carla's makefiles look for Clang 8 in a very specific directory which is likely not where you have them installed. Symlink `/usr/bin/clang`, `/usr/bin/clang++` and `/usr/bin/clang++-8` to `/opt/llvm-8/bin/clang-8` (or wherever else you have clang 8 installed). For example
 ````bash
-llvm-8/bin/clang++ -> /usr/bin/clang++
-llvm-8/bin/clang++ -> /usr/bin/clang++-8 
-llvm-8/bin/clang -> /usr/bin/clang
+ln -s /opt/llvm-8/bin/clang-8 /usr/bin/clang++-8
 ````
 
 ## File changes
