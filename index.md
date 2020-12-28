@@ -11,6 +11,7 @@
 	- [Joining the SBEL Slack Group](/lab-wiki/fundamentals/joining-the-sbel-slack-group.html)
 	- [Adding a user to the SBEL mailing list](/lab-wiki/fundamentals/adding-a-user-to-the-sbel-mailing-list.html)
     - [Editing the lab website](/lab-wiki/fundamentals/lab-website)
+    - [Reporting issues with MantisBT](/lab-wiki/fundamentals/reporting-issues-and-tasks)
 
 - ##### [Awards](/lab-wiki/awards/index.html)
     - [Awards and Programs](/lab-wiki/awards/awards-and-programs.html)
