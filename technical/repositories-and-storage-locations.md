@@ -22,7 +22,7 @@ This repository should periodically be refreshed from the main chrono repository
 
 ````bash
 git remote add upstream git@github.com:projectchrono/chrono.git         (ssh version)
-git remote add upstream https://github.com/uwsbel/chrono-internal.git   (https version)
+git remote add upstream https://github.com/projectchrono/chrono.git     (https version)
 ````
 
 Just as you can `git push` and `git pull` from origin which points to `chrono-internal`, by using the name upstream, you can `git pull` (you should **never** `git push` to upstream). After this when you run `git remote -v` you should see four items listed, two for the new 'upstream', and two for your original remote that points to chrono-internal (likely called 'origin'). With the new remote in place, you can refresh chrono-internal from the main repo with:
