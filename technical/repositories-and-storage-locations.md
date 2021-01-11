@@ -16,19 +16,22 @@ Chrono-internal is a place for Chrono code that is not ready for prime-time yet.
 
 Please start a separate branch in chrono-internal for your project, so that the develop branch can stay up to date with the latest and greatest from the main Chrono repository. 
 
-This repository should periodically be refreshed from the main chrono repository. To do this you can add a separate remote repo (in this example called 'upstream') to your local copy of chrono-internal
+**Refreshing chrono-internal**
+
+This repository should periodically be refreshed from the main chrono repository. I'll assume that you already have a remote called 'origin' that tracks the chrono-internal repo (you can check with `git remote -v`). To sync with the main chrono repo, you can add _another_ remote (I call it 'upstream', but you could choose a different name). To add the additional repo, run one of the following commands:
 
 ````bash
-git remote add upstream git@github.com:projectchrono/chrono.git
+git remote add upstream git@github.com:projectchrono/chrono.git         (ssh version)
+git remote add upstream https://github.com/uwsbel/chrono-internal.git   (https version)
 ````
 
-After this when you run `git remote -v` you should see four items listed, two for the new 'upstream', and two for your original remote that points to chrono-internal (likely called 'origin'). With the new remote in place, you can refresh chrono-internal from the main repo with:
+Just as you can `git push` and `git pull` from origin which points to `chrono-internal`, by using the name upstream, you can `git pull` (you should **never** `git push` to upstream). After this when you run `git remote -v` you should see four items listed, two for the new 'upstream', and two for your original remote that points to chrono-internal (likely called 'origin'). With the new remote in place, you can refresh chrono-internal from the main repo with:
 
 ````bash
 git pull upstream
 git push origin
 ````
-you are pulling into your local copy from the main chrono repo (upstream) and then pushing to the chrono-internal copy that github has (origin)
+you are pulling into your local copy from the main chrono repo (upstream) and then pushing to the chrono-internal copy that github has (origin).
 
 
 ### Chrono-tutorial (projectchrono/chrono-tutorial)
