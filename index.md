@@ -25,6 +25,7 @@
 	- [VS Code](/lab-wiki/technical/vscode.html)
 	- [Making Videos](/lab-wiki/technical/making-videos.html)
     - [Testing on Windows](/lab-wiki/technical/testing-on-windows)
+    - [Storage Locations](/lab-wiki/technical/repositories-and-storage-locations)
 
 - ##### [Projects](/lab-wiki/projects/index.html)
     - [Chrono to Carla Interface](/lab-wiki/projects/Chrono-Carla-Interface)
