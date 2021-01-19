@@ -3,7 +3,7 @@
 _SBEL stores many of its internal files for papers, presentations, and such in an svn repository. Subversion, or svn, is a version control system similar in many ways to git. The main difference between the two is that svn allows users to checkout portions of the repository file tree._
 
 #### Getting Access to the Repo
-* You must have a CAE login. If you do not have a CAE login, ask Dan to email the CAE helpdesk to have them set up an account for you.
+* You must have a CAE login. If you do not have a CAE login, you can create one [here](https://newuser.my.cae.wisc.edu/account).
 * Once you have a login, Dan should add you to the sbel group. At this point, you should have access to read and write the repo.
 
 #### Checking Out a Local Copy
