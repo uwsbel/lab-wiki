@@ -45,8 +45,8 @@ Profiling will give you an overview of your whole program, detailing what time w
 - __Working Directory__: Ensure that this exists
 - __Metrics__: Ensure ones relevant to your application are checked
 - __MPI__: Relevant if you are running an MPI application, here you can select the distribution of nodes that you'll use. Note that since this screenshot is from Curie, there is no option for more than one node.
-    - __Implementation__: On Euler select `Slurm (MPMD)`, on Curie select Open MPI
-- __Submit to Queue__: Unchecked on development since there is no slurm there.
+    - __Implementation__: Select Open MPI
+- __Submit to Queue__: Unchecked on development nodes since there is no slurm there.
 
 After the setup is complete you should be able to hit run! You should see any output from your program on the screen and you can tell the profiler to stop and collect data at any point
 
