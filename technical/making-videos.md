@@ -39,9 +39,15 @@ To go for both watermark and stringing the images together in one step, you can 
 
     ffmpeg -r 60 -f image2 -s 1920x1080 -i img%04d.png -i chrono_overlay_ll.png -filter_complex "[0:v][1:v] overlay=0:0" -vcodec libx264 -crf 25 -pix_fmt yuv420p anim.mp4
 
-## Share the video
+## Share the finished product
 
-The Animations folder on Box is a good place for most images.
+### Internal only
+
+If the video isn't polished enough for the public, then the Animations folder on Box is a good place for it.
+
+### External
+
+For awesome videos that we'd like to share with everyone, the SBEL YouTube channel is a good place for them. The username is `uwsbel@gmail.com` and you can contact Colin for access to the password repo. You don't need any special settings for the uploaded video, but make sure to add it to any relevant playlists. If you're adding a YouTube video, it's probably also a good time to add a news or projects update on the lab website about your work!
 
 ## Other Resources
 
